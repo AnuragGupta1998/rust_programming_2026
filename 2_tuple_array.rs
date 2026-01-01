@@ -34,4 +34,12 @@ fn tuple_array(){
     //modifying arrays
     arr[0] = 100;
     println!("{}",arr[0])
+
+    //print all elements of array using loop
+    for i in 0..arr.len(){
+        println!("array elements: {}",arr[i]);
+    }
+
+    //print all elements of array 
+    println!("array elements: {:?}",arr); // array elements: [100, 2, 3, 4, 5]git
 }
