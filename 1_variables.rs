@@ -30,7 +30,7 @@ fn variable() {
     const CONST: u8 = 10;
     println!("CONST:{}", CONST);
 
-    //Booleans........................................
+    //Booleans.........................................
     let is_valid_age: bool = true;
     
     if is_valid_age {

@@ -6,11 +6,11 @@ fn main(){
 fn tuple_array(){
     //tuple in rust.......
 
-    let tup:(i32,f32,u8) = (500,5.9,2);
+    let tup:(i32,f32,u8,&str) = (500,5.9,2,"anurag");
     let(x,y,z) = tup;  //Destructuring the tuple to accessing the tuples value
 
     //accessing the tuple by period(.)
-    println!("first way access period to print tuple value x:{} y:{} z:{}",tup.0,tup.1,tup.2); // first way to print tuple value x:500 y:5.9 z:2
+    println!("first way access period to print tuple value x:{} y:{} z:{} Name:{}",tup.0,tup.1,tup.2,tup.3); // first way to print tuple value x:500 y:5.9 z:2
     println!("second way to print tuple value x:{}",x);                                        // second way to print tuple value x:500
     println!("third way to printing x:{} y:{} z:{}",x,y,z);                                    // third way to printing x:500 y:5.9 z:2
 

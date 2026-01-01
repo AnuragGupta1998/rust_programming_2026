@@ -19,7 +19,7 @@ fn main() {
     for i in 0..=10{
         print!("{}",i)
     }
-    //it print from 0 to 9 in this loop 10 is excluded(not include)
+    //it print from 0 to 9 in this loop 10 is excluded(not include).
     for i in 0..10{
         println!("{}",i)
     }

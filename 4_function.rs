@@ -39,7 +39,6 @@ fn main() {
     println!("the sum of values= {}", sum2);
     // println!("the sum of values= {}",sum(num1,num2));
 
-
     let add_result: u8 = sum(50, 50);
     println!("{}", add_result);
 }
