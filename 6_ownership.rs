@@ -23,6 +23,12 @@ fn main(){
     let x:u8 =20;
     process_value(x); //x is copied to the function as u8 is a primitive type
     println!("Value of x after process_value function call: {}", x); //x=20
+
+    //ownership example with String and function without returning ownership
+    let str4 = String::from("Ashutosh");
+     get_length(str4);
+    //  println!("Value of str4 after get_length function call: {}", str4); //it would cause a compile-time error because str4 has been moved to get_length function
+
 }
 
 fn transfer_ownership(s:String) -> (String,usize) { //s comes into scope and now ownwership of s is with this function
@@ -35,4 +41,11 @@ fn transfer_ownership(s:String) -> (String,usize) { //s comes into scope and now
 fn process_value(num:u8) { //num comes into scope and now ownwership of num is with this function
     println!("Inside process_value function: {}", num); //num =20
     //num goes out of scope here, but since u8 is a primitive type, nothing special happens
+}
+
+fn get_length(name:String){
+    println!("Inside get_length function: {}", name);
+    let length = name.len();
+    println!("Length of the string is: {}", length);
+    //name goes out of scope here and memory is freed   
 }
