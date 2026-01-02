@@ -10,8 +10,7 @@ fn main(){
     //ownership example with non-primitive types like String values are stored into heap memory
     let str1 :String = String::from("Hello");
 
-    let str2 = str1;
-
+    let str2 = str1; //ownership of str1 is moved to str2
     println!("Value of str2: {}", str2); //str2=Hello
     //println!("Value of str1: {}", str1); //This line would cause a compile-time error because str1 has been moved to str2
 
