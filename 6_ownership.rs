@@ -20,6 +20,9 @@ fn main(){
     let (str3,l) = transfer_ownership(str3);   //here ownership of str3 is moved to the function and then returned back
     println!("Value of str3 after transferring ownership: {},{}", str3,l); //str3=World
 
+    let x:u8 =20;
+    process_value(x); //x is copied to the function as u8 is a primitive type
+    println!("Value of x after process_value function call: {}", x); //x=20
 }
 
 fn transfer_ownership(s:String) -> (String,usize) { //s comes into scope and now ownwership of s is with this function
@@ -27,5 +30,9 @@ fn transfer_ownership(s:String) -> (String,usize) { //s comes into scope and now
     let length = s.len();
     (s,length) //it returns a tuple containing the String and its length
     // return (s,length); //returning ownership back to the caller
+}
 
+fn process_value(num:u8) { //num comes into scope and now ownwership of num is with this function
+    println!("Inside process_value function: {}", num); //num =20
+    //num goes out of scope here, but since u8 is a primitive type, nothing special happens
 }
