@@ -27,6 +27,30 @@ fn area_of_given_shape(s: Shape) -> f32 {
         Shape:: Square(side) => side*side,
         Shape::Circle(radius) => PI*radius*radius, 
     }
+
+    //return the area 
+//    let ans =  match s {
+//         Shape::Rectangle(height,width) => height * width,
+//         Shape:: Square(side) => side*side,
+//         Shape::Circle(radius) => PI*radius*radius, 
+//     };
+//     ans
+
+   //return the area
+//    let ans =  match s {
+//         Shape::Rectangle(height,width) => height * width,
+//         Shape:: Square(side) => side*side,
+//         Shape::Circle(radius) => PI*radius*radius, 
+//     };
+//     return ans;
+
+
+  //return athe area 
+//    return  match s {
+//         Shape::Rectangle(height,width) => height * width,
+//         Shape:: Square(side) => side*side,
+//         Shape::Circle(radius) => PI*radius*radius, 
+//     }
 }
 
 fn main() {
